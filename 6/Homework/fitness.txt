@@ -1,0 +1,12 @@
+<footer>
+ 			<h4><a class="header_footer" href="">About us</a></h4>
+ 			<p class="text_footer" href="">Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. work-in-progress by dragging images into projects and sharable client group</a>
+ 			<h5 href=""><a class="header_footer" href="">Stay in touch</a></h5>
+            <h3><a href="">
+            	<i>
+            </a>
+            	
+            </i>
+        </a>
+        </h3>		
+ 		</footer>
