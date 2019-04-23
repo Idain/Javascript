@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear:both;
+}
+.container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.col {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+    background: grey;
+}

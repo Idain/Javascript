@@ -1,0 +1,24 @@
+@media print  {
+    .header:last-child {
+        display: none;
+    }
+}
+
+@media screen and (width: 540px)  {
+    .header {
+       width: 100%;
+    }
+    body {
+    width: 100%;
+}
+    .logo {
+      margin-left: 100px;
+      float: left;
+    }
+}
+
+@media screen and (width: 980px)  {
+    .header {
+       width: 75%;
+    }
+}
