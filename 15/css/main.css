@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9e9;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear:both;
+}
+.container {
+    max-width: 1000px;
+    margin: 25px;
+}
+
+.header {
+    display: block;
+    width: 940px;
+    background: #52bbde;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu_item {
+   display: inline-block;
+   position: relative;
+}
+
+.menu_link {
+    color: #fff;
+    display: inline-block;
+    font-size:24px;
+    font-style: 'Open Sans', sans-serif;
+    font-weight: 100;
+    padding: 10px 15px 10px 0;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    background: #4292ad;
+    color: #fff;
+    width: 100%;
+}
+
+.menu_item:first-child a
+ {
+     border-right-style: solid;
+     border-right-width: 2px;
+     border-color: transparent #75c9e5 transparent #75c9e5;
+     margin: 10px 0 10px 0;
+     margin-right: 20px;
+     padding-right: 20px;
+ }
+
+ .menu_item:last-child a
+  {
+     border-left-style: solid;
+     border-left-width: 1px;
+     border-color: transparent #75c9e5 transparent #75c9e5;
+     margin: 10px 0 10px 0;
+     margin-left: 200px;
+     padding-left: 25px;
+ }
+
+ .menu-list {
+      border-left-style: solid;
+     border-left-width: 2px;
+     border-color: transparent #75c9e5 transparent #75c9e5;
+     margin: 10px 0 10px 0;
+     margin-left: 200px;
+     padding-left: 25px;
+ }
+
+ .triangle {
+     position: relative;
+     top:17px;
+     width: 8px;
+     height: 6px;
+     border-style: solid;
+     border-width: 6px 4px 0 4px;
+     border-color: #ffffff transparent transparent transparent;
+ }
+
+.menu-list {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.submenu {
+    position: absolute;
+    top: -500%;
+    right: 240;
+    width: 250px;
+    background: #4292ad;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 0.5;
+}
+
+.submenu_link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+.submenu_link:hover {
+     background: #61a5bc;
+    color: #000;
+    width: 100%;
+}
+
+
+.menu_link:hover + .submenu, .submenu:hover {
+   opacity: 1;
+   height: auto;
+   visibility: visible;
+   bottom: auto;
+   top: 100%;
+}
+
+.menu_item:first-child .submenu{
+    left: 0;
+    right: auto;
+}
