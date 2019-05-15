@@ -20,14 +20,57 @@ body {
     margin: 25px;
 }
 
+.bar {
+    display: none;
+}
+
 .header {
     display: block;
     width: 940px;
     background: #52bbde;
+    margin-bottom: -15px;
     margin-left: 25px;
-    margin-bottom: 10px;
     border-radius: 5px;
 }
+
+  .menu_item:first-child a:before {
+    position: absolute;
+    left: 108px;
+    top: 19px;
+    content: ""; 
+    height: 30px;
+    width: 1px;
+    background: #44a3bf;
+  }
+
+  .menu_item:first-child a:after {
+    position: absolute;
+    left: 109px;
+    top: 19px;
+    content: ""; 
+    height: 30px;
+    width: 1px;
+    background: #75c9e5;
+  }
+  .menu_item:last-child a:before {
+    position: absolute;
+    left: -2px;
+    top: 19px;
+    content: ""; 
+    height: 30px;
+    width: 1px;
+    background: #44a3bf;
+  }
+
+  .menu_item:last-child a:after {
+    position: absolute;
+    left: -1px;
+    top: 19px;
+    content: ""; 
+    height: 30px;
+    width: 1px;
+    background: #75c9e5;
+  }
 
 .menu {
     float: left;
@@ -45,53 +88,32 @@ body {
 }
 
 .menu_link {
+     padding-right: 50px;
     color: #fff;
     display: inline-block;
     font-size:24px;
     font-style: 'Open Sans', sans-serif;
     font-weight: 100;
-    padding: 10px 15px 10px 0;
+    padding:15px 25px 14px 19px;
     text-decoration: none;
 }
 
 .menu_link:hover {
     background: #4292ad;
     color: #fff;
-    width: 100%;
 }
 
-.menu_item:first-child a
- {
-     border-right-style: solid;
-     border-right-width: 2px;
-     border-color: transparent #75c9e5 transparent #75c9e5;
-     margin: 10px 0 10px 0;
-     margin-right: 20px;
-     padding-right: 20px;
- }
+.menu_link:first-child  {
+    margin-right:25px; 
+}
 
- .menu_item:last-child a
-  {
-     border-left-style: solid;
-     border-left-width: 1px;
-     border-color: transparent #75c9e5 transparent #75c9e5;
-     margin: 10px 0 10px 0;
-     margin-left: 200px;
-     padding-left: 25px;
+ .contact {
+        margin-left: 210px;
  }
-
- .menu-list {
-      border-left-style: solid;
-     border-left-width: 2px;
-     border-color: transparent #75c9e5 transparent #75c9e5;
-     margin: 10px 0 10px 0;
-     margin-left: 200px;
-     padding-left: 25px;
- }
-
  .triangle {
      position: relative;
      top:17px;
+     left: 10px;
      width: 8px;
      height: 6px;
      border-style: solid;
@@ -108,7 +130,7 @@ body {
 .submenu {
     position: absolute;
     top: -500%;
-    right: 240;
+    left: 0px;
     width: 250px;
     background: #4292ad;
     list-style: none;
@@ -127,7 +149,6 @@ body {
 .submenu_link:hover {
      background: #61a5bc;
     color: #000;
-    width: 100%;
 }
 
 
