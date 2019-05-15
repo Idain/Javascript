@@ -1,0 +1,64 @@
+@media screen and (max-width: 668px) {
+    img {
+    width: 50%;
+    height: 50%;
+    }
+    .header {
+        width: 44%;
+        border-radius: 0px;
+    }
+    .menu {
+      width: 70%;
+   }
+
+   .menu_item {
+       width: 50%;
+       height: 0px;
+   }
+    .bar_down {
+    position: absolute;
+    top: -500%;
+    left: 20px;
+    font-size:12px;
+    width: 250px;
+    background: #4292ad;
+    list-style: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 0.5;
+   }
+   .bar {
+       display: inline-block;
+       background: #fff no-repeat url(../img/little-bar.png) 0 -10%;
+       width: 44%;
+       height: 18px;
+       cursor: pointer;
+       position: absolute;
+       top: 0px;
+       left: 25px;
+   }
+   .bar:hover + .bar_down, .bar_down:hover {
+   opacity: 1;
+   height: auto;
+   font-size:12px;
+   visibility: visible;
+   bottom: auto;
+   width: 50%;
+   top: 300px;
+}
+}
+
+@media screen and (max-width: 320px)  {
+   .header {
+       width: 100%;
+   }
+   .menu {
+      width: 100%;
+   }
+   img {
+       width: 100%;
+       height: 100%;
+   }
+}  
