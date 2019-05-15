@@ -1,4 +1,4 @@
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
     img {
     width: 50%;
     height: 50%;
@@ -12,10 +12,32 @@
    }
 
    .menu_item {
-       width: 50%;
+       width: 70%;
        height: 0px;
    }
-    .bar_down {
+   .menu_link {
+       font-size:12px;
+   }
+   .triangle {
+       position: relative;
+     top:10px;
+   }
+   .menu_item:first-child a::before{
+       display:none;
+   }
+   .menu_item:first-child a::after{
+       display:none;
+   }
+   .menu_item:last-child a::before{
+       display:none;
+   }
+   .menu_item:last-child a::after{
+       display:none;
+   }
+   .contact {
+       margin: 0 auto;
+   }
+   .menu_link {
     position: absolute;
     top: -500%;
     left: 20px;
@@ -23,7 +45,6 @@
     width: 250px;
     background: #4292ad;
     list-style: none;
-    display: none;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -39,7 +60,8 @@
        top: 0px;
        left: 25px;
    }
-   .bar:hover + .bar_down, .bar_down:hover {
+   
+   .bar:hover + .menu_link a, .menu_link a:hover{
    opacity: 1;
    height: auto;
    font-size:12px;
